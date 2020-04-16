@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://1003517715.github.io">
-  <title>Archives | Hexo</title>
+  <title>简单计算器 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://1003517715.github.io/archives/index.html">
+  <meta name="description" content="好长时间没更新博客了，今天来一个简易计算器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简单计算器">
+<meta property="og:url" content="https://1003517715.github.io/2020/04/16/%E7%AE%80%E5%8D%95%E8%AE%A1%E7%AE%97%E5%99%A8/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="好长时间没更新博客了，今天来一个简易计算器">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020041615533242.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU3NjY0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="article:published_time" content="2020-04-16T07:54:51.515Z">
+<meta property="article:modified_time" content="2020-04-16T07:57:48.945Z">
 <meta property="article:author" content="1003517715">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2020041615533242.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU3NjY0MA==,size_16,color_FFFFFF,t_70#pic_center">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -152,191 +158,163 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-简单计算器" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      简单计算器
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/16/%E7%AE%80%E5%8D%95%E8%AE%A1%E7%AE%97%E5%99%A8/" class="archive-article-date">
+
+        
+        <a href="/2020/04/16/%E7%AE%80%E5%8D%95%E8%AE%A1%E7%AE%97%E5%99%A8/" class="archive-article-date">
   	<time datetime="2020-04-16T07:54:51.515Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/16/%E7%AE%80%E5%8D%95%E8%AE%A1%E7%AE%97%E5%99%A8/">简单计算器</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>好长时间没更新博客了，今天来一个简易计算器</p>
+<a id="more"></a>
+<p><strong>html和js代码如下</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">&lt;title&gt;计算器&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">&lt;link href="Untitled-2.css" type="text/</span>css<span class="string">" rel="</span>stylesheet<span class="string">"&gt;</span></span><br><span class="line"><span class="string">&lt;/head&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;body&gt;</span></span><br><span class="line"><span class="string">	&lt;div id="</span>jisuanqi<span class="string">"&gt;</span></span><br><span class="line"><span class="string">	&lt;div id="</span>kong<span class="string">"&gt;&lt;/div&gt;</span></span><br><span class="line"><span class="string">    &lt;div id="</span>shuru<span class="string">"&gt;</span></span><br><span class="line"><span class="string">    	&lt;input type="</span>text<span class="string">" id="</span>shu<span class="string">"&gt;</span></span><br><span class="line"><span class="string">    &lt;/div&gt;</span></span><br><span class="line"><span class="string">    &lt;div id="</span>anniu<span class="string">"&gt;</span></span><br><span class="line"><span class="string">    	&lt;ul class="</span>din<span class="string">"&gt;</span></span><br><span class="line"><span class="string">        	&lt;li class="</span>an1<span class="string">" onClick="</span>qingkong()<span class="string">"&gt;C&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an1<span class="string">" onClick="</span>fuhao()<span class="string">"&gt;+/-&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an1<span class="string">" onClick="</span>tui()<span class="string">"&gt;退格&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an3<span class="string">" onClick="</span>shuqu(<span class="string">'/'</span>)<span class="string">"&gt;÷&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an1<span class="string">" onClick="</span>shuqu(<span class="string">'7'</span>)<span class="string">"&gt;7&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an1<span class="string">" onClick="</span>shuqu(<span class="string">'8'</span>)<span class="string">"&gt;8&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an1<span class="string">" onClick="</span>shuqu(<span class="string">'9'</span>)<span class="string">"&gt;9&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an3<span class="string">" onClick="</span>shuqu(<span class="string">'*'</span>)<span class="string">"&gt;X&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an1<span class="string">" onClick="</span>shuqu(<span class="string">'4'</span>)<span class="string">"&gt;4&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an1<span class="string">" onClick="</span>shuqu(<span class="string">'5'</span>)<span class="string">"&gt;5&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an1<span class="string">" onClick="</span>shuqu(<span class="string">'6'</span>)<span class="string">"&gt;6&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an3<span class="string">" onClick="</span>shuqu(<span class="string">'-'</span>)<span class="string">"&gt;-&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an1<span class="string">" onClick="</span>shuqu(<span class="string">'1'</span>)<span class="string">"&gt;1&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an1<span class="string">" onClick="</span>shuqu(<span class="string">'2'</span>)<span class="string">"&gt;2&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an1<span class="string">" onClick="</span>shuqu(<span class="string">'3'</span>)<span class="string">"&gt;3&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an3<span class="string">" onClick="</span>shuqu(<span class="string">'+'</span>)<span class="string">"&gt;+&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an1<span class="string">" onClick="</span>shuqu(<span class="string">'0'</span>)<span class="string">"&gt;0&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an1<span class="string">" onClick="</span>shuqu(<span class="string">'.'</span>)<span class="string">"&gt;.&lt;/li&gt;</span></span><br><span class="line"><span class="string">            &lt;li class="</span>an2<span class="string">" onClick="</span>dengyu()<span class="string">"&gt;=&lt;/li&gt;</span></span><br><span class="line"><span class="string">        &lt;/ul&gt;</span></span><br><span class="line"><span class="string">     &lt;/div&gt;</span></span><br><span class="line"><span class="string">&lt;/div&gt;</span></span><br><span class="line"><span class="string">&lt;script&gt;</span></span><br><span class="line"><span class="string">	function shuqu(shuzi)</span></span><br><span class="line"><span class="string">	&#123;</span></span><br><span class="line"><span class="string">		var shuchu=document.getElementById("</span>shu<span class="string">").value;</span></span><br><span class="line"><span class="string">		document.getElementById("</span>shu<span class="string">").value+=shuzi;</span></span><br><span class="line"><span class="string">	&#125;</span></span><br><span class="line"><span class="string">	function dengyu()</span></span><br><span class="line"><span class="string">	&#123;</span></span><br><span class="line"><span class="string">		var shuchu=document.getElementById("</span>shu<span class="string">").value;</span></span><br><span class="line"><span class="string">		var jieguo=eval(shuchu);</span></span><br><span class="line"><span class="string">		document.getElementById("</span>shu<span class="string">").value=jieguo;	</span></span><br><span class="line"><span class="string">	&#125;</span></span><br><span class="line"><span class="string">	function qingkong()</span></span><br><span class="line"><span class="string">	&#123;</span></span><br><span class="line"><span class="string">		var shuchu=document.getElementById("</span>shu<span class="string">").value;</span></span><br><span class="line"><span class="string">		document.getElementById("</span>shu<span class="string">").value='';</span></span><br><span class="line"><span class="string">	&#125;</span></span><br><span class="line"><span class="string">	function tui()</span></span><br><span class="line"><span class="string">	&#123;</span></span><br><span class="line"><span class="string">		var tg=document.getElementById("</span>shu<span class="string">");</span></span><br><span class="line"><span class="string">		tg.value=tg.value.substring(0,tg.value.length-1);</span></span><br><span class="line"><span class="string">	&#125;</span></span><br><span class="line"><span class="string">	function fuhao()</span></span><br><span class="line"><span class="string">	&#123;</span></span><br><span class="line"><span class="string">		var fuhao=document.getElementById("</span>shu<span class="string">").value;</span></span><br><span class="line"><span class="string">		if(fuhao.charCodeAt(0)==45)</span></span><br><span class="line"><span class="string">		&#123;</span></span><br><span class="line"><span class="string">			document.getElementById('shu').value=fuhao.substr(1,fuhao.length);</span></span><br><span class="line"><span class="string">		&#125;</span></span><br><span class="line"><span class="string">		else</span></span><br><span class="line"><span class="string">		&#123;</span></span><br><span class="line"><span class="string">			document.getElementById('shu').value='-'+fuhao;</span></span><br><span class="line"><span class="string">		&#125;</span></span><br><span class="line"><span class="string">	&#125;</span></span><br><span class="line"><span class="string">&lt;/script&gt;</span></span><br><span class="line"><span class="string">&lt;/body&gt;</span></span><br><span class="line"><span class="string">&lt;/html&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>css代码如下</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line">@charset <span class="string">"utf-8"</span>;</span><br><span class="line"><span class="comment">/* CSS Document */</span></span><br><span class="line"></span><br><span class="line">*&#123;</span><br><span class="line">	border:<span class="number">0</span>;</span><br><span class="line">	user-select:none;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line">#jisuanqi&#123;</span><br><span class="line">	width:<span class="number">350</span>px;</span><br><span class="line">	height:<span class="number">400</span>px;</span><br><span class="line">	background-color:#CCC;</span><br><span class="line">	margin:auto;</span><br><span class="line">	border-radius:<span class="number">10</span>px;</span><br><span class="line">	margin-top:<span class="number">150</span>px;</span><br><span class="line">&#125;</span><br><span class="line">#kong&#123;</span><br><span class="line">	width:<span class="number">100</span>%;</span><br><span class="line">	height:<span class="number">30</span>px;</span><br><span class="line">&#125;</span><br><span class="line">#shuru&#123;</span><br><span class="line">	width:<span class="number">100</span>%;</span><br><span class="line">	height:<span class="number">50</span>px;</span><br><span class="line">	background-color:#FFF;</span><br><span class="line">&#125;</span><br><span class="line">#shuru input&#123;</span><br><span class="line">	width:<span class="number">100</span>%;</span><br><span class="line">	height:<span class="number">50</span>px;</span><br><span class="line">	font-size:<span class="number">30</span>px;</span><br><span class="line">	text-align:right;</span><br><span class="line">	background-color: #CFf;</span><br><span class="line">&#125;</span><br><span class="line">#anniu&#123;</span><br><span class="line">	width:<span class="number">100</span>%;</span><br><span class="line">	height:<span class="number">380</span>px;</span><br><span class="line">	background-color: #CCC;</span><br><span class="line">	border-radius:<span class="number">10</span>px;</span><br><span class="line">&#125;</span><br><span class="line">#anniu li&#123;</span><br><span class="line">	list-style-type:none;</span><br><span class="line">&#125;</span><br><span class="line">#anniu .an1&#123;</span><br><span class="line">	width:<span class="number">60</span>px;</span><br><span class="line">	height:<span class="number">60</span>px;</span><br><span class="line">	list-style-type:none;</span><br><span class="line">	float:left;</span><br><span class="line">	background-color:#fff;</span><br><span class="line">	margin:<span class="number">5</span>px;</span><br><span class="line">	text-align:center;</span><br><span class="line">	line-height:<span class="number">60</span>px;</span><br><span class="line">	border-radius:<span class="number">50</span>%;</span><br><span class="line">&#125;</span><br><span class="line">#anniu .an2&#123;</span><br><span class="line">	width:<span class="number">130</span>px;</span><br><span class="line">	height:<span class="number">60</span>px;</span><br><span class="line">	list-style-type:none;</span><br><span class="line">	float:left;</span><br><span class="line">	background-color:#0FF;</span><br><span class="line">	margin:<span class="number">5</span>px;</span><br><span class="line">	text-align:center;</span><br><span class="line">	line-height:<span class="number">60</span>px;</span><br><span class="line">	border-radius:<span class="number">15</span>px;</span><br><span class="line">&#125;</span><br><span class="line">#anniu .an3&#123;</span><br><span class="line">	width:<span class="number">60</span>px;</span><br><span class="line">	height:<span class="number">60</span>px;</span><br><span class="line">	list-style-type:none;</span><br><span class="line">	float:left;</span><br><span class="line">	background-color:#0FF;</span><br><span class="line">	margin:<span class="number">5</span>px;</span><br><span class="line">	text-align:center;</span><br><span class="line">	line-height:<span class="number">60</span>px;</span><br><span class="line">	border-radius:<span class="number">50</span>%;</span><br><span class="line">&#125;</span><br><span class="line">.din&#123;</span><br><span class="line">	position:relative;</span><br><span class="line">	right:<span class="number">1</span>px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<p><strong>效果图如下</strong><br><img src="https://img-blog.csdnimg.cn/2020041615533242.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU3NjY0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><strong>无了</strong></p>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://1003517715.github.io/2020/04/16/%E7%AE%80%E5%8D%95%E8%AE%A1%E7%AE%97%E5%99%A8/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/19/JP%E3%81%AE%E8%8A%B1/" class="archive-article-date">
-  	<time datetime="2020-03-19T06:23:31.333Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-19</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/19/JP%E3%81%AE%E8%8A%B1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JPの花</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/19/JP%E3%81%AE%E8%8A%B1/">JPの花</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/13/%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2/" class="archive-article-date">
-  	<time datetime="2020-03-13T07:25:12.664Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/13/%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2/">注册界面</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">blibli</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/12/hello-world/" class="archive-article-date">
-  	<time datetime="2020-03-12T08:13:36.977Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/12/hello-world/">封不觉的博客</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/12/%E4%B8%80%E4%B8%AA%E6%9C%89%E7%82%B9%E5%A5%BD%E7%9C%8B%E7%9A%84%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2/" class="archive-article-date">
-  	<time datetime="2020-03-12T08:04:50.172Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/12/%E4%B8%80%E4%B8%AA%E6%9C%89%E7%82%B9%E5%A5%BD%E7%9C%8B%E7%9A%84%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2/">登陆界面</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">blibli</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -383,8 +361,8 @@ setInterval("createtime()",250);
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
