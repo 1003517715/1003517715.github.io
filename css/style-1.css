@@ -1,0 +1,241 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style-type: none;
+}
+.nav{
+	width: 100%;
+	height: 45px;
+	background: #94070a;
+}
+.nav-box1{
+	float: left;
+	width:450px;
+	height: 45px;
+	position: relative;
+	left: 250px;
+}
+.nav-box2{
+	float: right;
+	width:550px;
+	height: 45px;
+	position: relative;
+	right: 180px;
+}
+.nav-box1 a{
+	float: left;
+	width: 50px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	color: white;
+	margin-left: 20px;
+	position: relative;
+}
+.nav-box1 a:before{
+	 content: "";
+		  position: absolute;
+		  top: 10px;
+		  width: 0;
+		  border-top: 2px solid #fff;
+
+}
+.nav-box1 a:hover:before{
+	width: 80%;
+}
+.nav-box1 a:before{
+	-webkit-transition: width 0.5s ease-in-out;
+          -moz-transition: width 0.5s ease-in-out;
+          -ms-transition: width 0.5s ease-in-out;
+          -o-transition: width 0.5s ease-in-out;
+          transition: width 0.5s ease-in-out;
+}
+.nav-box2 a{
+	float: left;
+	width: 70px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	color: white;
+	margin-left: 20px;
+	position: relative;
+}
+.nav-box2 a:before{
+	 content: "";
+		  position: absolute;
+		  top: 10px;
+		  width: 0;
+		  border-top: 2px solid #fff;
+
+}
+.nav-box2 a:hover:before{
+	width: 50%;
+}
+.nav-box2 a:before{
+	-webkit-transition: width 0.5s ease-in-out;
+          -moz-transition: width 0.5s ease-in-out;
+          -ms-transition: width 0.5s ease-in-out;
+          -o-transition: width 0.5s ease-in-out;
+          transition: width 0.5s ease-in-out;
+}
+/*.nav-box1 a:hover{
+	transition: 0.3s;
+	border-top: 3px #FFFFFF solid;
+}
+.nav-box2 a:hover{
+	transition: 0.3s;
+	border-top: 3px #FFFFFF solid;
+}*/
+.nav2 {
+	height: 85px;
+	background:linear-gradient(rgba(16, 1, 1, 0.7),rgba(0,0,0,0));
+}
+.block{
+	width: 1400px;
+	margin: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo{
+	width: 200px;
+	height: 85px;;
+	background-image:url("../img/logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	position:relative;
+	top: 10px;
+	left: -100px;
+}
+.nav2_main {
+	font-size: 18px;
+	color: white;
+	text-align: center;
+}
+.nav2_main a{
+	margin: 0 20px;
+	color: white;
+	position: relative;
+}
+.tools{
+	 display: flex;
+    align-items: center;
+	margin-left: 30px;
+}
+.tools a{
+	margin-left: 30px;
+}
+.nav2_child>div{
+	padding: 40px;
+	display: flex;
+	border-top: 2px solid #94070a; 
+	position: absolute;
+	top: 100%;
+	width: 900px;
+	background: #fff url(../img/png96.png) center bottom no-repeat;
+    background-size: contain;
+	opacity:0;
+	visibility:hidden;
+	
+}
+.nav2_child .items{
+	padding: 40px;
+	display: flex;
+	border-top: 2px solid #94070a; 
+	position: absolute;
+	top: 100%;
+	width: 900px;
+	background: #fff url(../img/png96.png) center bottom no-repeat;
+    background-size: contain;
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 1s
+}
+
+.nav2_child .item .l{
+	display: flex;
+	width: 45%;
+}
+.nav2_child .item .l .pic{
+	width: 142px;
+}
+.nav2_child .item .l .pic img{
+	width: 142px;
+	height: 142px;
+}
+.nav2_child .item .l .txt{
+	flex: 1;
+	font-size: 18px;
+	color: red;
+	padding-left: 30px;
+	line-height: 2.2;
+}
+.nav2_child .item .r{
+	width: 55%;
+	font-size: 0px;
+}
+.nav2_child .item .r a{
+	width: 33.33%;
+	font-size: 18px;
+	margin-top: 10px;
+	display: inline-block;
+	color:#000000;
+}
+
+
+
+
+
+.nav2_child .items .l{
+	display: flex;
+	width: 45%;
+}
+.nav2_child .items .l .pic{
+	width: 142px;
+}
+.nav2_child .items .l .pic img{
+	width: 142px;
+	height: 142px;
+}
+.nav2_child .items .l .txt{
+	flex: 1;
+	font-size: 18px;
+	color: red;
+	padding-left: 30px;
+	line-height: 2.2;
+}
+.nav2_child .items .r{
+	width: 55%;
+	font-size: 0px;
+}
+.nav2_child .items .r a{
+	width: 33.33%;
+	font-size: 18px;
+	margin-top: 10px;
+	display: inline-block;
+	color:#000000;
+}
+
+
+
+
+
+.benner{
+	width: 1920px;
+	height: 1080px;
+	overflow: hidden;
+	
+}
+#benner_ul{
+	width: 9600px;
+	height: 1080px;
+}
+#benner_ul li{
+	float:left;
+	width: 1920px;
+	height: 1080px;
+}
